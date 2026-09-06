@@ -86,7 +86,7 @@ def load_toml(file_name: str) -> dict:
         return config
 
 
-gitos_settings = load_toml("gifos_settings.toml")
+gitos_settings = load_toml("gitos_settings.toml")
 ansi_escape_colors = load_toml("ansi_escape_colors.toml")
 
 __all__ = ["gitos_settings", "ansi_escape_colors"]

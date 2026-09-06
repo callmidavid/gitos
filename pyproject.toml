@@ -6,7 +6,7 @@ authors = ["David Uchenna <callmidavid@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 repository = "https://github.com/callmidavid/gitos"
-packages = [{ include = "gifos" }]
+packages = [{ include = "gitos" }]
 
 [tool.poetry.urls]
 "Bug Tracker" = "https://github.com/callmidavid/gitos/issues"
