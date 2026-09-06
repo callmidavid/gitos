@@ -164,6 +164,5 @@ cython_debug/
 *.gif
 temp*
 frame*
-fonts/
 .vscode
 !docs/**
