@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "github-readme-terminal"
+name = "gitos"
 version = "0.0.3"
 description = "✨ Elevate your GitHub Profile ReadMe with Minimalistic Retro Terminal GIFs 🚀"
 authors = ["David Uchenna <callmidavid@gmail.com>"]

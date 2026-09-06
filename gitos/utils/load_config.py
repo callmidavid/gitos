@@ -26,7 +26,7 @@ def load_toml(file_name: str) -> dict:
     :rtype: dict
     """
 
-    def __update_config_with_env_vars(config, prefix="GIFOS"):
+    def __update_config_with_env_vars(config, prefix="GITOS"):
         for key, value in config.items():
             if isinstance(value, dict):
                 __update_config_with_env_vars(value, f"{prefix}_{key.upper()}")
@@ -67,7 +67,7 @@ def load_toml(file_name: str) -> dict:
     def_config_file = (
         Path(__file__).parents[1] / "config" / file_name
     )  # default config path
-    user_config_file = Path.home() / ".config" / "gifos" / file_name  # user config path
+    user_config_file = Path.home() / ".config" / "gitos" / file_name  # user config path
 
     with def_config_file.open(mode="rb") as def_fp:
         config = tomllib.load(def_fp)
@@ -86,7 +86,7 @@ def load_toml(file_name: str) -> dict:
         return config
 
 
-gifos_settings = load_toml("gifos_settings.toml")
+gitos_settings = load_toml("gifos_settings.toml")
 ansi_escape_colors = load_toml("ansi_escape_colors.toml")
 
-__all__ = ["gifos_settings", "ansi_escape_colors"]
+__all__ = ["gitos_settings", "ansi_escape_colors"]

@@ -21,7 +21,7 @@ A Python project that empowers you to create visually stunning and unique GIFs f
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/assets/sample.gif">
     <source media="(prefers-color-scheme: light)" srcset="docs/assets/sample.gif">
-    <img alt="GIFOS" src="docs/assets/sample.gif">
+    <img alt="GITOS" src="docs/assets/sample.gif">
 </picture>
 
 ## 🗝️ Key Features
@@ -62,18 +62,18 @@ python -m pip install --upgrade github-readme-terminal
 Here is a basic demonstration:
 
 ```python
-import gifos
+import gitos
 
-t = gifos.Terminal(width=320, height=240, xpad=5, ypad=5)
+t = gitos.Terminal(width=320, height=240, xpad=5, ypad=5)
 t.gen_text(text="Hello World!", row_num=1)
 t.gen_text(text="With \x1b[32mANSI\x1b[0m escape sequence support!", row_num=2)
-github_stats = gifos.utils.fetch_github_stats(
+github_stats = gitos.utils.fetch_github_stats(
     user_name="callmidavid"
 )  # needs GITHUB_TOKEN in .env or as environment variable
 t.delete_row(row_num=1)
 t.gen_text(text=f"GitHub Name: {github_stats.account_name}", row_num=1, contin=True)
 t.gen_gif()
-image = gifos.utils.upload_imgbb(
+image = gitos.utils.upload_imgbb(
     file_name="output.gif", expiration=60
 )  # needs IMGBB_API_KEY in .env or as environment variable
 print(image.url)
@@ -85,7 +85,7 @@ For advanced usage, please refer [here](https://github.com/callmidavid)
 
 Tunable options can be set in two locations:
 
-1. Inside TOML files located in `~/.config/gifos/`.
+1. Inside TOML files located in `~/.config/gitos/`.
 2. As environment variables.
 
 Environment variables override configuration in TOML files
@@ -93,7 +93,7 @@ Environment variables override configuration in TOML files
 ### 📑 TOML configuration file format
 
 ```toml
-# gifos_settings.toml
+# gitos_settings.toml
 
 [general]
 debug = false
@@ -143,10 +143,10 @@ output_gif_name = "output"
 ### 📑 Environment variables format
 
 ```bash
-export GIFOS_GENERAL_DEBUG=true
-export GIFOS_GENERAL_COLOR_SCHEME="catppuccin-mocha"
-export GIFOS_CATPPUCCIN-MOCHA_DEFAULT_COLORS_FG="white"
-export GIFOS_CATPPUCCIN-MOCHA_DEFAULT_COLORS_BG="black"
+export GITOS_GENERAL_DEBUG=true
+export GITOS_GENERAL_COLOR_SCHEME="catppuccin-mocha"
+export GITOS_CATPPUCCIN-MOCHA_DEFAULT_COLORS_FG="white"
+export GITOS_CATPPUCCIN-MOCHA_DEFAULT_COLORS_BG="black"
 # Other variables are named similarly
 ```
 
