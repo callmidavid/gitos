@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from gifos.utils.schemas.github_user_rank import GithubUserRank
+from gitos.utils.schemas.github_user_rank import GithubUserRank
 
 
 @dataclass

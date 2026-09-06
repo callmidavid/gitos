@@ -9,8 +9,8 @@ The effects module contains various effects that can be applied to the Terminal 
 The utils module contains various utility functions that can be used.
 """
 
-from gifos.gifos import Terminal
-from gifos import effects
-from gifos import utils
+from gitos.gitos import Terminal
+from gitos import effects
+from gitos import utils
 
 __all__ = ["Terminal", "effects", "utils"]

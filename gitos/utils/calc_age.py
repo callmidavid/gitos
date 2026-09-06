@@ -1,7 +1,7 @@
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
-from gifos.utils.schemas.user_age import UserAge
+from gitos.utils.schemas.user_age import UserAge
 
 """This module contains a utility function for calculating a person's age."""
 

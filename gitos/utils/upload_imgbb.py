@@ -5,8 +5,8 @@ import sys
 
 from dotenv import load_dotenv
 
-from gifos.utils.load_config import gifos_settings
-from gifos.utils.schemas.imagebb_image import ImgbbImage
+from gitos.utils.load_config import gifos_settings
+from gitos.utils.schemas.imagebb_image import ImgbbImage
 
 """This module contains a function for uploading an image to ImgBB."""
 

@@ -1,6 +1,6 @@
 # Colorscheme reference: https://github.com/rxyhn/yoru#art--colorscheme
-from gifos.utils.load_config import ansi_escape_colors, gifos_settings
-from gifos.utils.schemas.ansi_escape import AnsiEscape
+from gitos.utils.load_config import ansi_escape_colors, gifos_settings
+from gitos.utils.schemas.ansi_escape import AnsiEscape
 
 """This module contains a class `ConvertAnsiEscape` for converting ANSI escape codes to color values."""
 

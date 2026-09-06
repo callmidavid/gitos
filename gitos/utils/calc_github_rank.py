@@ -1,5 +1,5 @@
 # Reference: https://github.com/anuraghazra/github-readme-stats/blob/23472f40e81170ba452c38a99abc674db0000ce6/src/calculateRank.js
-from gifos.utils.schemas.github_user_rank import GithubUserRank
+from gitos.utils.schemas.github_user_rank import GithubUserRank
 
 """This module contains a utility function for calculating a GitHub user's rank."""
 

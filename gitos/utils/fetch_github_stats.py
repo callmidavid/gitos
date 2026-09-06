@@ -12,8 +12,8 @@ import sys
 
 from dotenv import load_dotenv
 
-from gifos.utils.calc_github_rank import calc_github_rank
-from gifos.utils.schemas.github_user_stats import GithubUserStats
+from gitos.utils.calc_github_rank import calc_github_rank
+from gitos.utils.schemas.github_user_stats import GithubUserStats
 
 """This module contains a function for fetching a GitHub user's statistics."""
 
